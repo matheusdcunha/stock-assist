@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: 'stock-assist'
+  data:
+    mongodb:
+      auto-index-creation: true
+      authentication-database: 'admin'
+      host: 'localhost'
+      port: 27017
+      database: 'stockassistdb'
+      username: 'admin'
+      password: '123'
