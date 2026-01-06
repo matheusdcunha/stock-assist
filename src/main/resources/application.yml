@@ -16,3 +16,4 @@ app:
 
 api:
   auth-url: 'http://localhost:3001'
+  purchase-sector-url: 'http://localhost:3001'
