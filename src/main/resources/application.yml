@@ -13,3 +13,6 @@ spring:
 app:
   client-id: '${APP_CLIENT_ID : ABC}'
   client-secret: '${APP_CLIENT_SECRET: DEF}'
+
+api:
+  auth-url: 'http://localhost:3001'

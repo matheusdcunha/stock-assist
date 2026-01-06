@@ -9,9 +9,14 @@ import java.io.IOException;
 public class StockAssistService {
 
     private final ReportService reportService;
+    private final PurchaseSectorService purchaseSectorService;
 
-    public StockAssistService(ReportService reportService) {
+    public StockAssistService(
+            ReportService reportService,
+            PurchaseSectorService purchaseSectorService
+    ) {
         this.reportService = reportService;
+        this.purchaseSectorService = purchaseSectorService;
     }
 
     public void start(String reportPath){
@@ -29,6 +34,7 @@ public class StockAssistService {
                     var reorderQuantity = calculateReorderQuantity(item);
 
                     // 2. Para cada item do CSV chamar a API do setor de compras
+                    purchaseSectorService.sendPurchaseRequest(item, reorderQuantity);
 
                     // 3. Salvar no MongoDB os itens que foram recomprados
 
