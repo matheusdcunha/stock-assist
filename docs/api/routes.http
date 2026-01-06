@@ -1,5 +1,13 @@
-## Health Check
+### Health Check
 
 GET http://localhost:8080/health
 
-##
+### START
+
+POST http://localhost:8080/start
+Content-Type: application/json
+
+{
+  "reportPath":"/Users/matheuscunha/Developer/build-run/stock-assist/reports/stock.csv"
+}
+
