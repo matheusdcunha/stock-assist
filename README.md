@@ -62,3 +62,19 @@ Após iniciar a aplicação, você pode verificar se está tudo funcionando aces
 ```
 http://localhost:8080/health
 ```
+## Documentação
+
+### Sobre o sistema
+
+Pode ver mais sobre o sistema e como ele se propõe no arquivo [`stock-assit.md`](/docs/stock-assist.md).
+
+### Rotas
+
+Todas as rotas dessa API podem ser encontradas no arquivo [routes.http](./docs/api/routes.http).
+
+Pode usar a extensão HTTP Client para fazer requisição diretamente do arquivo `.http`.
+
+## Mock
+
+O sistema leva em conta uma chamada em uma aplicação de compra de materiais.
+Para simular essa aplicação utilize o [Mockoon](https://mockoon.com/) com o [arquivo json](/tools/purchase-sector-api.json).
