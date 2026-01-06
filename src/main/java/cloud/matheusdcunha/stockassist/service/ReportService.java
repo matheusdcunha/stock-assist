@@ -13,9 +13,8 @@ import java.util.List;
 @Service
 public class ReportService {
 
-    public List<CsvStockItem> readStockReport(String reporthPath) throws IOException {
-        try (Reader reader = Files.newBufferedReader(Paths.get(reporthPath))) {
-
+    public List<CsvStockItem> readStockReport(String reportPath) throws IOException {
+        try (Reader reader = Files.newBufferedReader(Paths.get(reportPath))) {
 
             var builder = new CsvToBeanBuilder<CsvStockItem>(reader)
                     .withType(CsvStockItem.class)

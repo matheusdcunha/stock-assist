@@ -10,3 +10,6 @@ spring:
       database: 'stockassistdb'
       username: 'admin'
       password: '123'
+app:
+  client-id: '${APP_CLIENT_ID : ABC}'
+  client-secret: '${APP_CLIENT_SECRET: DEF}'
