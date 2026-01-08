@@ -11,8 +11,7 @@ import java.time.LocalDateTime;
 public class PurchaseRequestEntity {
 
     @MongoId
-    @Field(name = "item_id")
-    private String itemId;
+    private String id;
 
     @Field(name = "item_name")
     private String itemName;
@@ -44,12 +43,12 @@ public class PurchaseRequestEntity {
     public PurchaseRequestEntity() {
     }
 
-    public String getItemId() {
-        return itemId;
+    public String getId() {
+        return id;
     }
 
-    public void setItemId(String itemId) {
-        this.itemId = itemId;
+    public void setId(String id) {
+        this.id = id;
     }
 
     public String getItemName() {
